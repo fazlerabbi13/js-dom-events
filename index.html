@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENTS</title>
+</head>
+<body>
+    <h1 onclick="console.log('hello')">hello events</h1>
+    <button onclick="console.log(7)">click me</button>
+    <button onclick="document.body.style.backgroundColor ='yellow'">click me</button>
+    <button onclick="makeRed()">click me</button>
+    <button id="make-green">make greeen</button>
+    <button id="make-purple">make purple</button>
+    <button id="make-blue">make blue</button>
+    <button id="make-orange">make orange</button>
+    <button id="make-goldenrod">make goldenrod</button>
+    
+    <script src="js/events.js"></script>
+    <script>
+        document.getElementById('make-goldenrod').addEventListener('click',function(){
+             document.body.style.backgroundColor ='goldenrod';
+         })
+    </script>
+</body>
+</html>
